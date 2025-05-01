@@ -1,0 +1,61 @@
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 22
+
+# Verify the Node.js version:
+node -v # Should print "v22.14.0".
+nvm current # Should print "v22.14.0".
+
+# Verify npm version:
+npm -v # Should print "10.9.2".
+
+
+Neue Seite immer mit:
+rnfes
+
+
+
+_layout.tsx
+
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+//import { Stack } from "expo-router"
+//import RootLayout
+
+const RootLayout = () => {
+  return (
+    <View> style={styles.container}
+      <Text>Hallo Welt hier bin ich!</Text>
+    </View>
+  )
+}
+
+export default RootLayout
+
+/*
+export default function RootLayout() {
+    return <Stack />;
+  }
+*/
+
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: 'green'
+    }
+})
+
+
+
+
+No overload matches this call.
+  Overload 1 of 2, '(props: ViewProps): View', gave the following error.
+    Type '{ backgroundColor: string; }' is not assignable to type 'ReactNode'.
+  Overload 2 of 2, '(props: ViewProps, context: any): View', gave the following error.
+    Type '{ backgroundColor: string; }' is not assignable to type 'ReactNode'.ts(2769
+
